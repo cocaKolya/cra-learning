@@ -4,15 +4,14 @@ import './App.css';
 
 function App() {
   const LINK_TITLE = "My Telegram"
-  var like = 0;
-  const[counter, setCounter] = useState(like)
+  const[counter, setCounter] = useState(0)
     return (
     <div className="App">
       <header className="App-header">
         <div>
           <h4>{counter}</h4>
-          <button onClick={() =>{setCounter(counter + 1), like++}}>Like</button>
-          <button onClick={() =>{setCounter(counter - 1), like--}}>Dislike</button>
+          <button onClick={() =>{setCounter(counter + 1)}}>Like</button>
+          <button onClick={() =>{setCounter(counter - 1)}}>Dislike</button>
         </div>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
