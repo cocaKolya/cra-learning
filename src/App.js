@@ -14,10 +14,11 @@ function App() {
           <button onClick={() =>{setCounter(counter - 1)}}>Dislike</button>
         </div>
         <img src={logo} className="App-logo" alt="logo" />
-        <p> Nikolay Nelidov.</p>
-        <p> 22 y.o. Moscow, Russia. </p>
-        <p> e-mail: nelidovn@yandex.ru </p>
-
+        <p>
+          <li>Nikolay Nelidov.</li> 
+         <li>22 y.o. Moscow, Russia.</li> 
+        <li> e-mail: nelidovn@yandex.ru</li> 
+        </p>
       
         <a
           className="telegram-link"
