@@ -3,23 +3,27 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const LINK_TITLE = " Hello world!"
-  const[counter, setCounter] = useState(0)
+  const LINK_TITLE = "My Telegram"
+  var like = 0;
+  const[counter, setCounter] = useState(like)
     return (
     <div className="App">
       <header className="App-header">
         <div>
           <h4>{counter}</h4>
-          <button onClick={() =>{setCounter(counter + 1)}}>Increment</button>
-          <button onClick={() =>{setCounter(counter - 1)}}>Decrement</button>
+          <button onClick={() =>{setCounter(counter + 1), like++}}>Like</button>
+          <button onClick={() =>{setCounter(counter - 1), like--}}>Dislike</button>
         </div>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Nikolay Nelidov.
+          22 y.o. Moscow, Russia
+          e-mail: nelidovn@yandex.ru
+
         </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="telegram-link"
+          href="https://telegram.org/cocakolya"
           target="_blank"
           rel="noopener noreferrer"
         >
