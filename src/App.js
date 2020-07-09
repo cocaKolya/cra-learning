@@ -15,9 +15,9 @@ function App() {
         </div>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <li>Nikolay Nelidov.</li> 
-         <li>22 y.o. Moscow, Russia.</li> 
-        <li> e-mail: nelidovn@yandex.ru</li> 
+          <strong>Nikolay Nelidov. </strong> <br>
+         22 y.o. Moscow, Russia. <br>
+         e-mail: nelidovn@yandex.ru <br>
         </p>
       
         <a
