@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const LINK_TITLE = "My Telegram"
+  const LINK_TITLE = "My Instagram"
   const[counter, setCounter] = useState(0)
     return (
     <div className="App">
@@ -14,15 +14,14 @@ function App() {
           <button onClick={() =>{setCounter(counter - 1)}}>Dislike</button>
         </div>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Nikolay Nelidov.
-          22 y.o. Moscow, Russia
-          e-mail: nelidovn@yandex.ru
+        <p> Nikolay Nelidov.</p>
+        <p> 22 y.o. Moscow, Russia. </p>
+        <p> e-mail: nelidovn@yandex.ru </p>
 
-        </p>
+      
         <a
           className="telegram-link"
-          href="https://telegram.org/cocakolya"
+          href="https://instagram.com/nelidov"
           target="_blank"
           rel="noopener noreferrer"
         >
